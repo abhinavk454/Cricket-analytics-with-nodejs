@@ -13,9 +13,10 @@ module.exports = function (req, res) {
           countObj["2016"] = { ...countObj["2016"], [ids]: data };
           ids = ids + 1;
         }
-      } else if (data["SEASON"] == "2017" && data["TOSS_DECISION"] == "field") {
+      }
+      if (data["SEASON"] == "2017" && data["TOSS_DECISION"] == "field") {
         while (ids < 11) {
-          countObj["2017"] = { ...countObj["2017"], [ids]: data };
+          countObj["2017"] = { ...countObj["2018"], [ids]: data };
           ids = ids + 1;
         }
       }
