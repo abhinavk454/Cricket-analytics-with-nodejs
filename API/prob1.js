@@ -1,3 +1,6 @@
+//DONE : 2016 and 2017 team who fielded first
+//TODO : Sorting according to TEAM name remaining
+
 const csv = require("csv-parser");
 const fs = require("fs");
 const Delivery = require("../db/models/deliveries");
@@ -5,6 +8,7 @@ const Delivery = require("../db/models/deliveries");
 var countObj = {};
 var ids = 0;
 var idl = 0;
+
 module.exports = function (req, res) {
   fs.createReadStream("./matches.csv")
     .pipe(csv())
