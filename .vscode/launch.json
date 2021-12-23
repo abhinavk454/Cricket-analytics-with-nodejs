@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "pwa-msedge",
+      "name": "http://localhost:9000/prob1",
+      "request": "launch",
+      "url": "http://localhost:9000/prob1"
+    }
+  ]
+}
