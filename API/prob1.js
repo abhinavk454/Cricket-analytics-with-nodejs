@@ -8,7 +8,7 @@ const Delivery = require("../db/models/deliveries");
 var countObj = {};
 var ids = 0;
 var idl = 0;
-
+//TIP : Sort CSV file according to TEAM name
 module.exports = function (req, res) {
   fs.createReadStream("./matches.csv")
     .pipe(csv())
